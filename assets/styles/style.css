@@ -1,0 +1,190 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #cac1c1;
+}
+
+/* Header Section */
+header {
+    background-color: #252222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Main Content */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 20px;
+    margin: 20px auto;
+}
+
+/* About Section */
+.about {
+    background-color: rgb(200, 196, 196);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #333;
+    text-align: justify;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(200, 196, 196);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Gallery Section */
+.gallery {
+    grid-column: span 2; /* Makes Gallery section span full width */
+    background-color: rgb(200, 196, 196);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the top of the container */
+    justify-content: space-between; /* Space between the image and description */
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 20%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.image-description {
+    padding-right: 20px;
+    text-align: justify;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Materials Section */
+.materials {
+    background-color: rgb(200, 196, 196);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.materials h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.document-container{
+    padding-bottom: 20px;
+}
+
+.materials video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #252222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr; /* Stack content in a single column */
+    }
+
+    .profile img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    .materials video {
+        width: 100%;
+    }
+}
